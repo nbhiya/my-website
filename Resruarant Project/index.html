@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Home Page</title>
+
+<style>
+header {
+background-color:brown; 
+padding: 50px;
+text-align: center;
+}
+
+a {
+display: inline-block;
+color: black;
+background-color: brown;
+text-decoration: none;
+padding: 10px;
+border-radius: 5px;
+}
+
+a:hover {
+background-color: darkred;
+}
+
+footer{
+background-color:brown; 
+padding: 50px;
+text-align: center;
+}
+
+table{
+width:100%;
+background-color:grey;
+}
+
+p{
+font-size:20px;
+color:white;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+max-width: 500px;
+position: relative;
+margin: auto;
+}
+
+.mySlides {
+display: none;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+color: white;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;width: 100%;text-align: center;
+}
+
+.numbertext {
+color: white;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+body{
+font-family: Arial, sans-serif;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: grey;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: brown;
+}
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+.container {
+display: flex;
+align-items: flex-start; 
+justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.button-container {
+background-color: brown;
+height: 400px;
+display: flex;
+font-size:16px;
+align-items: center; 
+padding: 15px 30px; 
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+position: relative; 
+    
+.item {
+flex: 1; 
+min-width: 250px; 
+max-width: 100%;
+}
+
+button {
+margin-top: 20px;
+padding: 10px 20px;
+background-color: grey; 
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px; 
+}
+
+button:hover {
+background-color: grey;
+</style>
+</head>
+
+<body bgcolor="grey">
+
+<header>
+<div>
+<h1 bgcolor="brown" align="center">Sironi Restuarant</h1>
+</div>
+<div>
+<img src="reslogo.jpg" width="150" height="150" valign="center" alt="Sironi Logo"><br>
+</div>
+<div>
+<a href="index.html" style="color: black; background-color:brown;">| Home Page|</a>
+<a href="Sironi%20menu.html" style="color: black; background-color:brown;">|Menu |</a>
+<a href="sironi_checkout.html?" style="color: black; background-color:brown;"> |Checkout |</a>
+<a href="Online%20Reservation%20Form.html" style="color: black; background-color:brown;">|Reservation Form|</a>
+<a href="sironi_newsletter.html" style="color: black; background-color:brown;">|Newsletter|</a>
+<a href="Login_for_newsletter.html" style="color: black; background-color:brown;">|Login |</a>
+<a href="sironi_frames.html" style="color: black; background-color:brown;">|Frames |</a>
+</div>
+</h3>
+<hr>
+<h1> <marquee bgcolor="grey"   behavior="alternate" direction="right" scrollamount="30" > WELCOME TO SIRONI RESTUARANT</marquee></h1>
+<hr>
+</header>
+
+<div class="slideshow-container">
+
+<div class="slides fade">
+<div class="numbertext">1 / 11</div>
+    <img src="res1.jpg" style="width:100%;height:40%; ">
+<div class="text">Outdoor eating area</div>
+</div>
+
+
+<div class="slides fade">
+<div class="numbertext">2 / 11</div>
+    <img src="res2.jpg" style="width:100%; height:80%;">
+<div class="text">Smokies and samoosas</div>
+</div>
+	
+ <div class="slides slides3">
+<div class="numbertext">3 / 11</div>
+    <img src="res3.jpg" style="width:100%; height:80%;">
+<div class="text">Interior</div>
+</div>
+
+<div class="slides slides4">
+<div class="numbertext">4 / 11</div>
+    <img src="res4.jpg" style="width:100%; height:80%;">
+<div class="text">Interior/drinks section</div>
+</div>
+
+
+<div class="slides slides5">
+<div class="numbertext">5 / 11</div>
+    <img src="res5.jpg" style="width:100%; height:80%;">
+<div class="text">People enjoying themselves</div>
+</div>
+
+
+<div class="slides slides6">
+<div class="numbertext">6 / 11</div>
+    <img src="res6.jpg" style="width:100%; height:80%;">
+<div class="text">Breakfast</div>
+</div>
+
+
+<div class="slides slides7">
+<div class="numbertext">7 / 11</div>
+    <img src="res7.jpg" style="width:100%; height:80%;">
+<div class="text">Breakfast options</div>
+</div>
+
+
+<div class="slides slides9">
+<div class="numbertext">8 / 11</div>
+    <img src="res8.jpg" style="width:100%; height:80%;">
+<div class="text">Foods</div>
+</div>
+
+
+<div class="slides slides10">
+<div class="numbertext">9 / 11</div>
+    <img src="res9.jpg" style="width:100%; height:80%;">
+<div class="text">Sit on a barstool</div>
+</div>
+
+
+<div class="slides slides11">
+<div class="numbertext">10 / 11</div>
+    <img src="res10.jpg" style="width:100%; height:80%;">
+<div class="text">Selections of foods</div>
+</div>
+
+
+<div class="slides slides12">
+<div class="numbertext">11 / 11</div>
+    <img src="res11.jpg" style="width:100%; height:80%;">
+<div class="text">Service</div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+</div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("slides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) { slideIndex = 1; }
+if (n < 1) { slideIndex = slides.length; }
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+ dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex - 1].style.display = "block";
+dots[slideIndex - 1].className += " active";
+}
+</script>
+
+<hr>
+<p>
+Open 24 hours a day.
+</p>
+<p>
+Welcome to Sironi Restuarant! The pride and joy of our beautiful city, Nairobi.<br>
+At Sironi Restuarant, we take pride in serving delicious meals rooted in tradition. Established in 2010, our restaurant has been a beloved local gem,
+known for our locally sourced ingredients. Our journey began with a passion for 
+quality in our recipes, and over the years, we've created a warm and inviting atmosphere where friends and families come together to enjoy unforgettable dining experiences.
+Join us as we celebrate the flavors of our heritage!
+</p>
+
+<hr>
+
+<div class="container">
+
+<div class="item">
+<a href="Sironi%20menu.html" >
+<img src="menu.jfif" alt="Menu" style="width: 100%; height: 400px; object-fit: cover;">
+</a>
+</div>
+	
+<div class="button-container"> 
+<h4 style="margin: 0; position: absolute; top: 10px; left: 10px;">Reserve a table</h4> 
+        <button onclick="window.location.href='Online%20Reservation%20Form.html';">Reserve</button>
+</div>
+	
+<div class="item">
+<video  height="400px" controls style="width: 100%; object-fit: cover;">
+<source src="resvid.mp4" type="video/mp4">
+Your browser does not support this video format.
+</video>
+</div>
+	
+<div class="item">
+<a href="sironi_newsletter.html" >
+<img src="news.jfif"  height="400px" alt="Newsletter" style="width: 100%; height: 400px; object-fit: cover;">
+</a>
+</div>
+</div>
+
+
+<hr>
+<hr>
+<fieldset>
+<legend><h1>Sironi Restuarant</h1></legend>
+<table>
+
+<tr>
+<td>
+<a href="Sironi%20menu.html"> 
+<img src="egg_rolls.jfif" width="200" height="200" alt="Egg rolls/2 rolls"><h4 valign="center">Egg rolls/2 rolls....Ksh 120</h4>
+</a>
+</td>
+<td>
+<a href="Sironi%20menu.html">
+<img src="cappaccino.jfif"  width="200" height="200" alt="Cappaccino"><h4 valign="center">Cappaccino.......Ksh 150</h4>
+</a>
+</td>
+<td>
+<a href="Sironi%20menu.html">
+<img src="crab_rangoon.jfif" width="200" height="200" alt="Crab rangoon/3pcs"><h4 valign="center">Crab rangoon/3pcs.......Ksh 180</h4>
+</a>
+</td>
+<td>
+<a href="Sironi%20menu.html">
+<img src="redbulll.jfif" width="200" height="200" alt="Redbull 500ml"><h4 valign="center">Redbull 500ml......Ksh 150</h4>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="Sironi%20menu.html">
+<img src="charlotte.jfif" width="200" height="200" alt="Charlotte"><h4 valign="center">Charlotte.......Ksh 240</h4>
+</a>
+</td>
+<td>
+<a href="Sironi%20menu.html">
+<img src="fruit-salad.jfif" width="200" height="200" alt="Fruit Salad"><h4 valign="center">Fruit Salad........Ksh 150</h4>
+</a>
+</td>
+<td>
+<a href="Sironi%20menu.html">
+<img src="crackers.jfif" width="200" height="200" alt="Crackers"><h4 valign="center">Crackers......Ksh 70</h4>
+</a>
+</td>
+<td>
+<a href="Sironi%20menu.html">
+<img src="tbone.jfif" width="200" height="200" alt="T-bone steak"><h4 valign="center">T-bone steak.......Ksh 500</h4>
+</a>
+</td>
+</tr>
+</table>
+</fieldset>
+</body>
+
+<footer>
+<p style="color:white;">Thank you for being a part of our Sironi Restaurant family!</p>
+<p style="color:white;">Follow us on social media for more updates and special offers!</p>
+<p style="color:white;">&copy; 2024 Sironi Restaurant. All rights reserved.</p>
+
+<address align="center"> 
+
+<p>gmail: kuyenzekabhiya.08@gmail.com</p>
+<p>gmail: bhiyanophiwo@gmail.com</p>
+CONTACT:+254 0748399095 <br><br>
+<a href="https://www.instagram.com/nbhiya_art_esw/?__pwa=1" style="color: black; ">
+<img src="insta.jfif" width="20px" alt="Instagram">
+</a>
+<a href="https://facebook.com/prifile.php?id=61561110359966" style="color: black; ">
+<img src="fb.jfif" width="20px" alt="Facebook">
+</a>
+<br><br>
+<a href="Login_for_newsletter.html" style="color: black;">|Login |</a>
+</address>
+
+</footer>
+</html>

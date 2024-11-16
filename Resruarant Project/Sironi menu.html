@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sironi menu</title>
+<header> 
+<div>
+<h1 bgcolor="brown" align="center">Sironi Restuarant</h1>
+</div>
+<div>
+<img src="reslogo.jpg" width="150" height="150" valign="center" alt="Sironi Logo"><br>
+</div>
+<div>
+
+<a href="index.html" style="color: black; background-color:brown;">| Home Page|</a>
+<a href="Sironi%20menu.html" style="color: black; background-color:brown;">|Menu |</a>
+<a href="sironi_checkout.html?" style="color: black; background-color:brown;"> |Checkout |</a>
+<a href="Online%20Reservation%20Form.html" style="color: black; background-color:brown;">|Reservation Form|</a>
+<a href="sironi_newsletter.html" style="color: black; background-color:brown;">|Newsletter|</a>
+<a href="Login_for_newsletter.html" style="color: black; background-color:brown;">|Login |</a></div>
+<a href="sironi_frames.html" style="color: black; background-color:brown;">|Frames |</a>
+</header>
+
+<style>
+header {
+background-color: brown; 
+padding: 50px;
+text-align: center; 
+}
+
+body{
+font-family: Arial, sans-serif;
+}
+
+a {
+display: inline-block;
+color: black;
+background-color: brown;
+text-decoration: none;
+padding: 10px;
+border-radius: 5px;
+}
+
+a:hover {
+background-color: darkred;
+} 
+
+footer {
+background-color: brown; 
+padding: 50px;
+text-align: center;
+}
+
+footer img {
+width:20px;
+height:20px;
+}
+
+table{
+width:100%;
+background-color:grey;
+}
+
+.menu {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color: grey;
+padding: 20px;
+}
+
+.menu-item {
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+margin: 10px;
+text-align: center;
+    
+}
+img {
+max-width: 200px;
+height: 200px;
+}
+
+button {
+margin-top: 5px;
+padding: 5px;
+background-color: green;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>SIRONI MENU</h1>
+</header>
+
+<fieldset>
+<legend align="center"><h3>Appetizers</h3></legend>
+<table width="100%">
+<tr>
+<div class="menu">
+<td> <div class="menu-item">
+<img src="egg_rolls.jfif" alt="Egg rolls/2 rolls">
+<h4>Egg rolls/2 rolls......................Ksh 120</h4>
+<button onclick="addtocart('Egg rolls/2 rolls', 120)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="cripy_dumplings.jfif" alt="Crispy dumpling/3pcs">
+<h4>Crispy dumpling/3pcs...................Ksh 150</h4>
+<button onclick="addtocart('Crispy dumpling/3pcs', 150)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="crab_rangoon.jfif" alt="Crab rangoon/3pcs">
+<h4>Crab rangoon/3pcs......................Ksh 180</h4>
+<button onclick="addtocart('Crab rangoon/3pcs', 180)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="fried_squids.jfif" alt="Fried squids">
+<h4>Fried squids...........................Ksh 200</h4>
+<button onclick="addtocart('Fried squids', 200)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="french_fries.jfif" alt="French fries">
+<h4>French fries........................Ksh 100</h4>
+<button onclick="addtocart('French fries', 100)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="french_spring_rolls.jfif" alt="French spring rolls/2 rolls">
+<h4>French spring rolls/2 rolls............Ksh 120</h4>
+<button onclick="addtocart('French spring rolls/2 rolls', 120)">Add to cart</button>
+</div>
+</td>
+<td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="grilled_pork_rolls.jfif" alt="Grilled pork rolls/2 rolls">
+<h4>Grilled pork rolls/2 rolls..............Ksh 160</h4>
+<button onclick="addtocart('Grilled pork rolls/2 rolls', 160)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="pork_sausage_rolls.jfif" alt="Pork sausage rolls/2 rolls">
+<h4>Pork sausage rolls/2 rolls.............Ksh 170</h4> 
+<button onclick="addtocart('Pork sausage rolls/2 rolls', 170)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="grilled_oysters.jfif" alt="Grilled Oysters/6pcs">
+<h4>Grilled Oysters/6pcs...................Ksh 250</h4>
+<button onclick="addtocart('Grilled Oysters/6pcs', 250)">Add to cart</button>
+</div>
+</td>
+</tr>
+</div>
+</tbody>
+</table>
+	
+</fieldset>
+
+
+<script>
+function addtocart(item, price) {
+alert(item + " has been added to your cart for Ksh " + price);
+}
+</script>
+
+
+<fieldset>
+<legend align="center"><h1>Hot Drinks</h1></legend>
+<table width="100%">
+<tr>
+<td>
+<div class="menu-item">
+<img src="brewed_coffee.jfif" alt="Brewed coffee">
+<h4>Brewed coffee................................Ksh 100</h4>
+<button onclick="addtocart('Brewed coffee', 100)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="cappaccino.jfif" alt="Cappaccino">
+<h4>Cappaccino...................................Ksh 150</h4>
+<button onclick="addtocart('Cappaccino', 150)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="african_tea.jfif" alt="African Tea">
+<h4>African Tea..................................Ksh 80</h4>
+<button onclick="addtocart('African Tea', 80)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="caffe+latte.jfif" alt="Caffe latte">
+<h4>Caffe latte..................................Ksh 120</h4>
+<button onclick="addtocart('Caffe latte', 120)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="white_coffee.jfif" alt="White Coffee">
+<h4>White Coffee.................................Ksh 110</h4>
+<button onclick="addtocart('White Coffee', 110)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="mocha.jfif" alt="Mocha">
+<h4>Mocha........................................Ksh 140</h4>
+<button onclick="addtocart('Mocha', 140)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="hot_chocolate.jfif" alt="Hot chocolate">
+<h4>Hot chocolate................................Ksh 130</h4>
+<button onclick="addtocart('Hot chocolate', 130)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="expresso.jfif" alt="Expresso">
+<h4>Expresso.....................................Ksh 150</h4>
+<button onclick="addtocart('Expresso', 150)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="americano.jfif" alt="Americano">
+<h4>Americano.....................................Ksh 120</h4>
+<button onclick="addtocart('Americano', 120)">Add to cart</button>
+</div>
+</td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend align="center"><h1>Cold Drinks</h1></legend>
+<table width="100%">
+<tr>
+<td>
+<div class="menu-item">
+<img src="iced_coffee.jfif" alt="Iced Coffee">
+<h4>Iced Coffee...............................Ksh 120</h4>
+<button onclick="addtocart('Iced Coffee', 120)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="iced_mocha_coffee.jfif" alt="Ice Mocha Coffee">
+<h4>Ice Mocha Coffee..........................Ksh 150</h4>
+<button onclick="addtocart('Ice Mocha Coffee', 150)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="iced_americano.jfif" alt="Iced Americano">
+<h4>Iced Americano...........................Ksh 130</h4>
+<button onclick="addtocart('Iced Americano', 130)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="pepsi.jfif" alt="Pepsi 500ml">
+<h4>Pepsi 500ml................................Ksh 80</h4>
+<button onclick="addtocart('Pepsi 500ml', 80)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="dasani.jfif" alt="Dasani water 500ml">
+<h4>Dasani water 500ml............................Ksh 50</h4>
+<button onclick="addtocart('Dasani water 500ml', 50)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="cold_milk.jfif" alt="Cold glass of milk">
+<h4>Cold glass of milk............................Ksh 60</h4>
+<button onclick="addtocart('Cold glass of milk', 60)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="minute_maid.jfif" alt="Minute maid juice">
+<h4>Minute maid juice.............................Ksh 90</h4>
+<button onclick="addtocart('Minute maid juice', 90)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="coke.jfif" alt="Coca cola 500ml">
+<h4>Coca cola 500ml...............................Ksh 80</h4>
+<button onclick="addtocart('Coca cola 500ml', 80)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="redbulll.jfif" alt="Redbull 500ml">
+<h4>Redbull 500ml.................................Ksh 150</h4>
+<button onclick="addtocart('Redbull 500ml', 150)">Add to cart</button>
+</div>
+</td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend align="center"><h1>Main Course</h1></legend>
+<table width="100%">
+<tr>
+<td>
+<div class="menu-item">
+<img src="lasagna.jfif" alt="Lasagna">
+<h4>Lasagna..........................Ksh 250</h4>
+<button onclick="addtocart('Lasagna', 250)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="meatloaf.jfif" alt="Meatloaf">
+<h4>Meatloaf........................Ksh 300</h4>
+<button onclick="addtocart('Meatloaf', 300)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="tbone.jfif" alt="T-bone steak">
+<h4>T-bone steak.......................Ksh 500</h4>
+<button onclick="addtocart('T-bone steak', 500)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="beefstew.jfif" alt="Beef Stew">
+<h4>Beef Stew.......................Ksh 220</h4>
+<button onclick="addtocart('Beef Stew', 220)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="fish.jfif" alt="Honey Orange Fish Fillets">
+<h4>Honey Orange Fish Fillets.................Ksh 350</h4>
+<button onclick="addtocart('Honey Orange Fish Fillets', 350)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="pot_roast.jfif" alt="Pot Roast">
+<h4>Pot Roast.......................Ksh 400</h4>
+<button onclick="addtocart('Pot Roast', 400)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="tomato_pie.jfif" alt="Creamy tomato pasta">
+<h4>Creamy tomato pasta.......................Ksh 280</h4>
+<button onclick="addtocart('Creamy tomato pasta', 280)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="lemon chicken.jfif" alt="Lemon Chicken">
+<h4>Lemon Chicken.......................Ksh 300</h4>
+<button onclick="addtocart('Lemon Chicken', 300)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="pesto_pasta.jfif" alt="Broccoli Pesto Pasta">
+<h4>Broccoli Pesto Pasta.......................Ksh 250</h4>
+<button onclick="addtocart('Broccoli Pesto Pasta', 250)">Add to cart</button>
+</div>
+</td>
+</tr>
+</table>
+</fieldset>
+
+
+<fieldset>
+<legend align="center"><h1>Dessert</h1></legend>
+<table width="100%">
+<tr>
+<td>
+<div class="menu-item">
+<img src="cheesecake.jfif" alt="Cheesecake">
+<h4>Cheesecake..........................Ksh 250</h4>
+<button onclick="addtocart('Cheesecake', 250)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="pudding.jfif" alt="Pudding">
+<h4>Pudding........................Ksh 150</h4>
+<button onclick="addtocart('Pudding', 150)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="ice-cream.jfif" alt="Ice Cream">
+<h4>Ice Cream.......................Ksh 200</h4>
+<button onclick="addtocart('Ice Cream', 200)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="choco-brownie.jfif" alt="Chocolate Brownie">
+<h4>Chocolate Brownie.......................Ksh 180</h4>
+<button onclick="addtocart('Chocolate Brownie', 180)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="lemon-bar.jfif" alt="Lemon bar">
+<h4>Lemon bar.................Ksh 160</h4>
+<button onclick="addtocart('Lemon bar', 160)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="jelly_custard.jfif" alt="Jelly/Custard">
+<h4>Jelly/Custard.......................Ksh 120</h4>
+<button onclick="addtocart('Jelly/Custard', 120)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="bombe_glacee.jfif" alt="Bombe Glacee">
+<h4>Bombe Glacee.......................Ksh 220</h4>
+<button onclick="addtocart('Bombe Glacee', 220)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="charlotte.jfif" alt="Charlotte">
+<h4>Charlotte.......................Ksh 240</h4>
+<button onclick="addtocart('Charlotte', 240)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="fruit-salad.jfif" alt="Fruit Salad">
+<h4>Fruit Salad.......................Ksh 150</h4>
+<button onclick="addtocart('Fruit Salad', 150)">Add to cart</button>
+</div>
+</td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend align="center"><h1>Snacks</h1></legend>
+<table width="100%">
+<tr>
+<td>
+<div class="menu-item">
+<img src="pop-corn.jfif" alt="Pop-corn">
+<h4>Pop-corn..........................Ksh 80</h4>
+<button onclick="addtocart('Pop-corn', 80)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="granola.jfif" alt="Granola">
+<h4>Granola........................Ksh 100</h4>
+<button onclick="addtocart('Granola', 100)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="nuts.jfif" alt="Nuts">
+<h4>Nuts.......................Ksh 150</h4>
+<button onclick="addtocart('Nuts', 150)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="pretzels.jfif" alt="Pretzels">
+<h4>Pretzels......................Ksh 90</h4>
+<button onclick="addtocart('Pretzels', 90)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="ogurt.jfif" alt="Yogurt">
+<h4>Yogurt.................Ksh 110</h4>
+<button onclick="addtocart('Yogurt', 110)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="protein_bar.jfif" alt="Protein Bar">
+<h4>Protein Bar.......................Ksh 130</h4>
+<button onclick="addtocart('Protein Bar', 130)">Add to cart</button>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="menu-item">
+<img src="crackers.jfif" alt="Crackers">
+<h4>Crackers.......................Ksh 70</h4>
+<button onclick="addtocart('Crackers', 70)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="trail mix.jfif" alt="Trail mix">
+<h4>Trail mix.......................Ksh 120</h4>
+<button onclick="addtocart('Trail mix', 120)">Add to cart</button>
+</div>
+</td>
+<td>
+<div class="menu-item">
+<img src="string-cheese.jfif" alt="String Cheese">
+<h4>String Cheese.......................Ksh 80</h4>
+<button onclick="addtocart('String Cheese', 80)">Add to cart</button>
+</div>
+</td>
+</tr>
+</table>
+<tbody id="cart-body">
+<h3 id="cart-total">Total: Ksh 0</h3>
+<button onclick="checkout()">Checkout</button>
+</fieldset>
+
+<div>
+<h2>Your Cart</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Total</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="cart-body">
+    
+</tbody>
+</table>
+	
+
+
+<footer>
+<p style="color:white;">Thank you for being a part of our Sironi Restaurant family!</p>
+<p style="color:white;">Follow us on social media for more updates and special offers!</p>
+<p style="color:white;">&copy; 2024 Sironi Restaurant. All rights reserved.</p>
+
+<address align="center"> 
+
+<p>gmail: kuyenzekabhiya.08@gmail.com</p>
+<p>gmail: bhiyanophiwo@gmail.com</p>
+CONTACT: 0748399095 <br><br>
+<a href="https://www.instagram.com/nbhiya_art_esw/?__pwa=1" style="color: black;">
+<img src="insta.jfif" alt="Instagram">
+</a>
+<a href="https://facebook.com/prifile.php?id=61561110359966" style="color: black; ">
+<img src="fb.jfif" alt="Facebook">
+</a>
+<br><br>
+<a href="Login_for_newsletter.html" style="color: black;">|Login |</a>
+</address>
+
+</footer>
+</fieldset>
+</body>
+
+<script>
+let cart = [];
+function addtocart(item, price) {
+alert(item + " has been added to your cart for Ksh " + price);
+        
+}
+function addtocart(itemName, itemPrice) {
+const existingItem = cart.find(item => item.name === itemName);
+if (existingItem) {
+existingItem.quantity++;
+} else {
+cart.push({ name: itemName, price: itemPrice, quantity: 1 });
+}
+updateCart();
+}
+    
+function updateCart() {
+const cartBody = document.getElementById('cart-body');
+cartBody.innerHTML = ''; // Clear existing items
+let total = 0;
+
+cart.forEach(item => {
+const itemTotal = item.price * item.quantity;
+total += itemTotal;
+
+const row = document.createElement('tr');
+row.innerHTML = `
+<td>${item.name}</td>
+<td>Ksh ${item.price}</td>
+<td>${item.quantity}</td>
+<td>Ksh ${itemTotal}</td>
+<td><button onclick="removeFromCart('${item.name}')">Remove</button></td>
+ `;
+cartBody.appendChild(row);
+});
+
+document.getElementById('cart-total').innerText = `Total: Ksh ${total}`;
+}
+
+function removeFromCart(itemName) {
+cart = cart.filter(item => item.name !== itemName);
+updateCart();
+}
+
+function checkout() {
+if (cart.length === 0) {
+alert('Your cart is empty!');
+return;
+}
+
+localStorage.setItem('cartItems', JSON.stringify(cart));
+    
+const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+localStorage.setItem('totalAmount', total);
+
+alert('Proceeding to checkout...');
+window.location.href = 'file:///D:/Web/Resruarant%20Project/sironi_checkout.html';
+}
+</script>
+</html>
+
+</menu>
